@@ -29,7 +29,7 @@ interface CardProps {
 function Card({ item, active }: CardProps) {
   return (
     <div
-      className={`relative rounded-2xl bg-white dark:bg-[#14181f] border border-ink-25 dark:border-white/5 shadow-sm dark:shadow-none px-6 md:px-8 pt-8 pb-16 text-center transition-all duration-500 ${
+      className={`relative rounded-2xl bg-white dark:bg-[#14181f] border border-ink-200 dark:border-white/5 shadow-sm dark:shadow-none px-6 md:px-8 pt-8 pb-16 text-center transition-all duration-500 ${
         active ? "opacity-100 md:scale-[1.02]" : "opacity-40 md:scale-100"
       }`}
     >

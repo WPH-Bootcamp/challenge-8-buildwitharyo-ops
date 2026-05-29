@@ -27,7 +27,7 @@ export function Footer() {
             <Logo />
           </div>
 
-          <div className="my-8 border-t border-ink-100 dark:border-white/10" />
+          <div className="my-8 border-t border-ink-200 dark:border-white/10" />
 
           <div className="flex flex-col md:flex-row gap-6 md:gap-10 md:justify-between md:items-center">
             <nav className="flex flex-wrap gap-x-8 gap-y-3">

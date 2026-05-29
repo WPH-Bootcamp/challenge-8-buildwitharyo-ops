@@ -17,7 +17,7 @@ export function Services() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7 mt-16 md:mt-20">
           {services.items.map((service, i) => (
             <Reveal key={service.slug} delay={i * 60}>
-              <div className="group relative rounded-2xl bg-white dark:bg-[#14181f] border border-ink-25 dark:border-white/5 shadow-sm dark:shadow-none px-6 pt-10 pb-7 hover:border-primary/40 hover:-translate-y-1 transition-all duration-300 h-full">
+              <div className="group relative rounded-2xl bg-white dark:bg-[#14181f] border border-ink-200 dark:border-white/5 shadow-sm dark:shadow-none px-6 pt-10 pb-7 hover:border-primary/40 hover:-translate-y-1 transition-all duration-300 h-full">
                 {service.icon && (
                   <img
                     src={service.icon}

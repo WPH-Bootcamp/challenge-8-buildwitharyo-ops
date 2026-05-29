@@ -38,7 +38,7 @@ export function ContactModal({ state, onClose }: Props) {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="relative max-w-md w-full bg-white dark:bg-[#14181f] border border-ink-25 dark:border-white/10 rounded-2xl p-8 text-center animate-[modal-in_300ms_ease-out_both]"
+        className="relative max-w-md w-full bg-white dark:bg-[#14181f] border border-ink-200 dark:border-white/10 rounded-2xl p-8 text-center animate-[modal-in_300ms_ease-out_both]"
       >
         <button
           type="button"

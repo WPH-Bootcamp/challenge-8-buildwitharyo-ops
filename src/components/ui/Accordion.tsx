@@ -21,7 +21,7 @@ export function Accordion({ items, defaultOpen = 0 }: Props) {
         return (
           <div
             key={idx}
-            className="border-b border-ink-25 dark:border-white/10"
+            className="border-b border-ink-200 dark:border-white/10"
           >
             <button
               type="button"

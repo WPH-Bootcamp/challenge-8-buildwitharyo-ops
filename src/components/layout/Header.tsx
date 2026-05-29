@@ -23,7 +23,7 @@ export function Header() {
       <header
         className={`sticky top-0 z-40 transition-colors ${
           scrolled
-            ? "bg-white/85 dark:bg-[#0a0d12]/80 backdrop-blur-md border-b border-ink-25 dark:border-white/5"
+            ? "bg-white/85 dark:bg-[#0a0d12]/80 backdrop-blur-md border-b border-ink-200 dark:border-white/5"
             : "bg-transparent"
         }`}
       >

@@ -9,7 +9,7 @@ export function FaqCta() {
       <Container>
         <div className="grid lg:grid-cols-[1fr_360px] gap-10 lg:gap-12 items-start">
           <Reveal>
-            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 border-b border-ink-25 dark:border-white/10 pb-6">
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 border-b border-ink-200 dark:border-white/10 pb-6">
               <h2 className="text-3xl md:text-4xl lg:text-[42px] font-bold leading-[1.15] text-ink-900 dark:text-white max-w-[480px]">
                 {faq.title}
               </h2>

@@ -14,7 +14,7 @@ const empty: ContactFormData = {
 };
 
 const inputCls =
-  "w-full rounded-xl border border-ink-25 dark:border-white/10 bg-white dark:bg-[#14181f] px-4 py-3.5 text-ink-900 dark:text-white placeholder:text-ink-400 dark:placeholder:text-white/30 focus:border-primary focus:outline-none transition-colors";
+  "w-full rounded-xl border border-ink-200 dark:border-white/10 bg-white dark:bg-[#14181f] px-4 py-3.5 text-ink-900 dark:text-white placeholder:text-ink-400 dark:placeholder:text-white/30 focus:border-primary focus:outline-none transition-colors";
 
 export function ContactForm() {
   const [data, setData] = useState<ContactFormData>(empty);

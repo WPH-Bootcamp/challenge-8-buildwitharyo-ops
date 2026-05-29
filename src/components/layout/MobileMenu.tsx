@@ -43,7 +43,7 @@ export function MobileMenu({ isOpen, onClose }: Props) {
             key={link.href}
             href={link.href}
             onClick={onClose}
-            className="py-4 text-lg font-semibold border-b border-ink-25 dark:border-white/10 text-ink-900 dark:text-white"
+            className="py-4 text-lg font-semibold border-b border-ink-200 dark:border-white/10 text-ink-900 dark:text-white"
           >
             {link.label}
           </a>

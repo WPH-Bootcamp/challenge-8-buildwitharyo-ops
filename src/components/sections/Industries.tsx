@@ -42,7 +42,7 @@ export function Industries() {
                     className={`absolute left-0 top-1.5 bottom-1.5 w-[3px] rounded-full transition-all duration-300 origin-center ${
                       isActive
                         ? "bg-primary scale-y-100"
-                        : "bg-ink-25 dark:bg-white/15 scale-y-75"
+                        : "bg-ink-200 dark:bg-white/15 scale-y-75"
                     }`}
                   />
                   <span

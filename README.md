@@ -290,9 +290,9 @@ Berdasarkan design Figma, buat sections berikut (sesuaikan dengan design yang di
 **Format Submission:**
 
 ```
-Nama: [Nama lengkap kamu]
-Repository: [GitHub repository URL]
-Deployment: [Live website URL]
+Nama: Aryo Pradana
+Repository: https://github.com/WPH-Bootcamp/challenge-8-buildwitharyo-ops.git
+Deployment: https://challenge-8-buildwitharyo-ops.vercel.app
 Notes: [Catatan tambahan jika ada - challenges, learning points, etc.]
 ```
 
