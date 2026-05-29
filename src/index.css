@@ -1,44 +1,118 @@
-/**
- * Main CSS File
- *
- * Tailwind CSS v4 - Using new @import syntax
- * Docs: https://tailwindcss.com/docs/installation/using-vite
- */
-
 @import "tailwindcss";
 
-/* Tell Tailwind where to scan for classes */
 @source "./**/*.{js,jsx,ts,tsx}";
 @source "../index.html";
 
-/**
- * Custom Global Styles
- *
- * Add your custom global styles here if needed
- * Prefer using Tailwind utilities in components
- */
+@custom-variant dark (&:where(.dark, .dark *));
 
-/* Smooth scrolling for anchor links */
+/* ----- Theme tokens ----- */
+
+@theme {
+  --color-primary: #ff623e;
+  --color-primary-dark: #cc4e32;
+
+  --color-ink-25: #fdfdfd;
+  --color-ink-100: #f5f5f6;
+  --color-ink-300: #d5d7da;
+  --color-ink-400: #a4a7ae;
+  --color-ink-500: #717680;
+  --color-ink-600: #535862;
+  --color-ink-700: #414651;
+  --color-ink-800: #252b37;
+  --color-ink-900: #181d27;
+  --color-ink-950: #0a0d12;
+
+  --font-display: "Quicksand", system-ui, sans-serif;
+  --font-body: "Quicksand", system-ui, sans-serif;
+}
+
+/* ----- Base ----- */
+
 html {
   scroll-behavior: smooth;
+  background: #0a0d12;
 }
 
-/* Optional: Custom scrollbar styles */
-/* Uncomment if you want custom scrollbar
-::-webkit-scrollbar {
-  width: 10px;
+body {
+  font-family: var(--font-body);
+  color: white;
+  background: #0a0d12;
 }
 
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+  color: white;
 }
 
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 5px;
+html:not(.dark) body {
+  background: white;
+  color: var(--color-ink-800);
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+html:not(.dark) h1,
+html:not(.dark) h2,
+html:not(.dark) h3,
+html:not(.dark) h4,
+html:not(.dark) h5,
+html:not(.dark) h6 {
+  color: var(--color-ink-900);
 }
-*/
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* ----- Keyframes ----- */
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(calc(-50% - 2rem)); }
+}
+
+@keyframes hero-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes hero-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-12px); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes modal-in {
+  from { opacity: 0; transform: scale(0.95) translateY(8px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* ----- Utilities ----- */
+
+.stat-circle {
+  background: radial-gradient(circle at center, #ffffff 0%, #f9fafb 55%, #eef0f3 100%);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+.dark .stat-circle {
+  background: radial-gradient(circle at center, #1c2128 0%, #14181f 60%, #0a0d12 100%);
+  box-shadow: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

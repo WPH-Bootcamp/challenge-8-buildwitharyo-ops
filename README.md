@@ -1,4 +1,5 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/dKi29DX4)
+
 # Company Profile - React Assignment
 
 ## Deskripsi Assignment
@@ -310,10 +311,12 @@ Notes: [Catatan tambahan jika ada - challenges, learning points, etc.]
 
 **Q: TailwindCSS sudah ter-install?**
 A: Ya! TailwindCSS v4 sudah dikonfigurasi. Kamu bisa langsung gunakan utility classes. File penting:
+
 - `src/index.css` - Berisi `@import "tailwindcss"` dan `@source` directive
 - `vite.config.ts` - Sudah include `@tailwindcss/vite` plugin
 
 Untuk customization, tambahkan `@theme` di `src/index.css`:
+
 ```css
 @theme {
   --color-primary: #your-color;
@@ -480,13 +483,13 @@ Contoh yang baik: "Saya trying to implement responsive navbar, tapi di mobile me
 
 ## Evaluation Criteria Summary
 
-| Kategori                        | Bobot | Focus Area                                             |
-| ------------------------------- | ----- | ------------------------------------------------------ |
-| **UI/UX Implementation**        | 40%   | Design accuracy, mobile to desktop responsive, visual consistency    |
-| **Code Architecture & Quality** | 30%   | Component structure, TypeScript, project organization  |
-| **Styling Implementation**      | 20%   | TailwindCSS usage, code readability, styling patterns  |
-| **Development Process**         | 10%   | Git management, code quality standards                 |
-| **Bonus**                       | +10%  | Animations, accessibility, performance, extra features |
+| Kategori                        | Bobot | Focus Area                                                        |
+| ------------------------------- | ----- | ----------------------------------------------------------------- |
+| **UI/UX Implementation**        | 40%   | Design accuracy, mobile to desktop responsive, visual consistency |
+| **Code Architecture & Quality** | 30%   | Component structure, TypeScript, project organization             |
+| **Styling Implementation**      | 20%   | TailwindCSS usage, code readability, styling patterns             |
+| **Development Process**         | 10%   | Git management, code quality standards                            |
+| **Bonus**                       | +10%  | Animations, accessibility, performance, extra features            |
 
 ---
 
